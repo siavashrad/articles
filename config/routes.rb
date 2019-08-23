@@ -1,0 +1,11 @@
+Rails.application.routes.draw do
+  resources :articles
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  get 'welcome/home', to: 'welcome#home'
+
+  get 'welcome/about', to: 'welcome#about'
+
+  get 'mypage/me', to: 'mypage#me'
+
+end
